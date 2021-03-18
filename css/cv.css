@@ -1,0 +1,1320 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/*      .onLoad
+{
+    -webkit-animation: apareIconitaFulscreean 4s forwards;
+}*/
+
+.containerCV {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 0 0 4px #606060;
+}
+
+.containerHeader {
+    position: relative;
+    width: 100.3%;
+    margin-left: -.15%;
+    background-color: #e8e8e8;
+    height: 250px;
+    background-image: url('../imagini/vectori.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+#containerTextPrimaImagine {
+    width: 100%;
+    height: 250px;
+    background-image: url(../imagini/front3.jpg);
+    background-size: cover;
+    background-position: top;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    position: absolute;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 5;
+    animation: apareIconitaFulscreean 4s forwards;
+}
+
+@keyframes apareIconitaFulscreean {
+    0% {
+        z-index: 5;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+
+#containerTextPrimaImagine h5 {
+    font-size: 15000px;
+    margin-left: -32000px;
+    margin-top: -2800px;
+    float: left;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 1;
+    animation: imageToText 1.5s forwards;
+    -webkit-animation-delay: 2s;
+    transition: font-size 3.4s ease-in;
+    animation-delay: 2s;
+}
+
+@keyframes imageToText {
+    99% {
+        -webkit-text-fill-color: transparent;
+    }
+    100% {
+        font-size: 22px;
+        margin-top: 145px;
+        margin-left: 30%;
+        -webkit-text-fill-color: white;
+    }
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.containerText {
+    position: absolute;
+    text-align: center;
+    margin-top: 70px;
+    left: 40%;
+    transform: translate(-50%);
+    z-index: 10;
+    animation: zIndex .5s forwards;
+    animation: fundal .5s forwards;
+    -webkit-animation-delay: 2.5s;
+    transition: font-size 3.4s ease-in;
+    animation-delay: 2.5s;
+}
+
+@keyframes zIndex {
+    0% {}
+    95% {
+        z-index: 10;
+    }
+    100% {
+        z-index: 1;
+    }
+}
+
+@keyframes fundal {
+    0% {}
+    95% {
+        /*background: linear-gradient( to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0) 15%, rgb(0, 0, 0, 0) 85%,
+         rgba(255, 255, 255, 0) 100%);*/
+                 	     background: radial-gradient(ellipse closest-side,
+      rgb(0, 0, 0, 0) 60%, transparent);
+    }
+    100% {
+/*        background: linear-gradient( to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.6) 15%, rgb(0, 0, 0, 0.6) 85%, 
+        	rgba(255, 255, 255, 0) 100%);*/
+        	     background: radial-gradient(ellipse closest-side,
+      rgb(0, 0, 0, 0.6) 80%, transparent);
+        z-index: 1;
+    }
+}
+
+.containerText h4 {
+    display: none;
+}
+
+.containerText h2 {
+    font-family: 'Cinzel';
+    letter-spacing: 5px;
+    color: white;
+    position: relative;
+    font-size: 30px;
+    padding: 30px 30px 60px 30px;
+    z-index: 50;
+    white-space: nowrap;
+}
+
+.containerText p {
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%);
+    margin-top: -50px;
+    color: white;
+    font-size: 22px;
+    animation: textFadeOut .5s forwards;
+    -webkit-animation-delay: 2.5s;
+    transition: font-size 3.4s ease-in;
+    animation-delay: 2.5s;
+}
+
+@keyframes textFadeOut {
+    0% {}
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.pozaHeader {
+    position: absolute;
+    width: 220px;
+    height: 255px;
+    bottom: -20px;
+    right: 4%;
+    background-size: cover;
+    background-image: url(../imagini/personale/eu1.png);
+    transition: .5s;
+}
+
+.containerCV:hover .pozaHeader {
+    filter: grayscale(0);
+    transform: scale(1.15);
+    bottom: 16px;
+    right: 5%;
+}
+
+
+/*fullscreen poza personala*/
+
+.fa-arrows {
+    position: absolute;
+    right: 165px;
+    transform: rotate(-45deg);
+    color: #b0c5f1;
+    background-size: 100% 100%;
+    margin-top: 230px;
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.containerCV:hover .fa-arrows {
+    right: 185px;
+}
+
+.fa-arrows:hover {
+    color: #5083cc;
+    cursor: pointer;
+}
+
+.continutCV {
+    position: relative;
+    background-color: whitesmoke;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.containerTexteCV {
+    width: 75%;
+    z-index: 111;
+    position: relative;
+}
+
+.baraInformatiiPersonale {
+    position: absolute;
+    left: -2rem;
+    margin-top: -0.5rem;
+    width: 1.5px;
+    height: 93%;
+    background: linear-gradient(to bottom, whitesmoke 0%, #000042 10%, #000042 85%, whitesmoke 100%);
+}
+
+.pozaInformatiiPersonale {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../imagini/summary.png);
+    background-size: 100% 100%;
+    margin-top: -8px;
+    transition: .4s ease-out;
+}
+
+.informatiiPersonale:hover .pozaInformatiiPersonale {
+    transform: scale(1.2);
+}
+
+.informatiiPersonale {
+    position: relative;
+    margin-left: 6rem;
+    padding: 20px 20px 0 0;
+    text-align: justify;
+}
+
+.informatiiPersonale p {
+    font-size: 18px;
+}
+
+.informatiiPersonale h4 {
+    padding-bottom: 15px;
+    margin-left: 40px;
+}
+
+.baraLegaturiStanga {
+    position: absolute;
+    left: -2rem;
+    margin-top: -0.7rem;
+    width: 1.5px;
+    height: 105%;
+    background: linear-gradient(to bottom, whitesmoke 0%, #000042 10%, #000042 85%, whitesmoke 100%);
+}
+
+.containerAptitudiniPrincipale {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 6rem;
+}
+
+.cerc {
+    position: absolute;
+    margin-left: -2.1rem;
+    margin-top: 11px;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 5px #c2ebff;
+}
+
+.bara {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: linear-gradient(to right, whitesmoke 0%, #000042 20%, #000042 50%, #8080a0 70%, whitesmoke 100%);
+    margin-left: -2.5rem;
+    margin-top: 12px;
+}
+
+.pozaKeySkills {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../imagini/key.png);
+    background-size: 100% 100%;
+    margin-top: -9px;
+    transition: .4s ease-out;
+}
+
+.containerAptitudiniPrincipale:hover .pozaKeySkills {
+    transform: scale(1.2);
+}
+
+.textAptitudiniPrincipale {
+    padding-bottom: 18px;
+    margin-left: 35px;
+}
+
+.baraTitlu {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: linear-gradient(to right, whitesmoke 0%, #000042 20%, #000042 50%, #8080a0 70%, whitesmoke 100%);
+    margin-left: -2.5rem;
+    margin-top: 8px;
+}
+
+.cercTitlu {
+    position: absolute;
+    margin-left: -2.15rem;
+    margin-top: 5px;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 6px #c2ebff;
+    z-index: 1;
+}
+
+ul li {
+    font-size: 18px;
+    line-height: 25px;
+    list-style: none;
+    padding-bottom: 8px;
+}
+
+.containerAbilitatiSoftware {
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 6rem;
+}
+
+.pozaAbilitatiSoftware {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../imagini/software.png);
+    background-size: 100% 100%;
+    margin-top: -8px;
+    transition: .4s ease-out;
+}
+
+.containerAbilitatiSoftware:hover .pozaAbilitatiSoftware {
+    transform: scale(1.2);   
+}
+
+.textAbilitatiSoftware {
+    padding-bottom: 18px;
+    margin-left: 38px;
+}
+
+.baraLegaturiStangaAbilitati {
+    position: absolute;
+    left: -2rem;
+    margin-top: -0.9rem;
+    width: 1.5px;
+    height: 110%;
+    background: linear-gradient(to bottom, whitesmoke 0%, #000042 10%, #000042 85%, whitesmoke 100%);
+}
+
+.cercSoftware {
+    position: absolute;
+    margin-left: -2.1rem;
+    margin-top: 10px;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 6px 5px #c2ebff;
+}
+
+.baraSoftware {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: linear-gradient(to right, whitesmoke 0%, #000042 20%, #000042 50%, #8080a0 70%, whitesmoke 100%);
+    margin-left: -2.5rem;
+    margin-top: 11px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~ patratProficient with: JS, HTML, CSS  */
+
+.patratProficient {
+    margin-top: 5px;
+    float: left;
+    width: 100%;
+}
+
+.patratProficient span {
+    font-size: 18px;
+}
+
+.textProficient {
+    float: left;
+    width: 116px;
+    white-space: nowrap;
+}
+
+.containerProficientTexteSiImagini {
+    margin-left: 130px;
+}
+
+.containerJavaScript {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.pozaJavaScript {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagini/javaScript.png);
+    background-size: 100% 100%;
+    margin-left: 3px;
+    margin-top: 0px;
+    transition: .4s;
+}
+
+.pozaJavaScript:hover {
+    transform: scale(2);
+    z-index: 2;
+}
+
+.javaScript {
+    float: left;
+}
+
+.javaScript span {
+    margin-left: 29px;
+    margin-top: 0px;
+    float: left;
+}
+
+
+/*~~~~~ familiar with: php , sql....~~~~~~~~~~~~~~~*/
+
+.patratFamiliar {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+.patratFamiliar span {
+    font-size: 18px;
+}
+
+.textFamiliar {
+    float: left;
+    width: 130px;
+}
+
+.textFamiliar span {}
+
+.containerFamiliarTexteSiImagini {
+    margin-left: 118px;
+}
+
+.containerNet {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.pozaNet {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagini/internet.png);
+    background-size: 100% 100%;
+    margin-left: 3px;
+    margin-top: 0px;
+    transition: .4s;
+}
+
+.pozaNet:hover {
+    transform: scale(2);
+    z-index: 2;
+}
+
+.internet {
+    float: left;
+}
+
+.internet span {
+    margin-left: 29px;
+    margin-top: 0px;
+    float: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.containerPhp, .containerMysql, .containerJQuery, .containerOOP, .containerSASS {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+.pozaPhp, .pozaMysql, .pozaJQuery, .pozaOOP, .pozaSASS {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-size: 100% 100%;
+    margin-left: -5px;
+    margin-top: 0px;
+    transition: .4s;
+}
+
+.pozaPhp {
+	    background-image: url(../imagini/php.jpg);
+}
+
+.pozaPhp:hover, .pozaMysql:hover, .pozaJQuery:hover, .pozaOOP:hover, .pozaSASS:hover {
+    transform: scale(2);
+    z-index: 2;
+}
+
+.php, .mysql, .jquery, .OOP, .sass {
+    float: left;
+}
+
+.php, .mysql, .jquery, .OOP, .sass span {
+    margin-left: 25px;
+    margin-top: 0px;
+    float: left;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.pozaMysql {
+	    width: 25px;
+    height: 25px;
+    background-image: url(../imagini/mysql.png);
+    margin-top: -2px;
+    margin-left: -4px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.pozaJQuery {
+    background-image: url(../imagini/jquery4.png);
+    margin-left: -4px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.pozaOOP {
+    background-image: url(../imagini/oop.jpg);
+    margin-left: -4px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.pozaSASS {
+    background-image: url(../imagini/sass.png);
+    margin-left: -4px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.containerHtml {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.pozaHtml {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagini/html55.png);
+    background-size: 100% 100%;
+    margin-left: 3px;
+    margin-top: 0px;
+    transition: .4s;
+}
+
+.pozaHtml:hover {
+    transform: scale(2);
+    z-index: 2;
+}
+
+.html {
+    float: left;
+}
+
+.html span {
+    margin-left: 29px;
+    margin-top: 0px;
+    float: left;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.containerCss {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.pozaCss {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagini/css3.png);
+    background-size: 100% 100%;
+    margin-left: 3px;
+    margin-top: 0px;
+    transition: .4s;
+}
+
+.pozaCss:hover {
+    transform: scale(2);
+    z-index: 2;
+}
+
+.css {
+    float: left;
+}
+
+.css span {
+    margin-left: 29px;
+    margin-top: 0px;
+    float: left;
+}
+
+
+/*~~~~~~ learning REACT  ~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.patratLearning {
+    margin-top: 10px;
+    float: left;
+    width: 100%;
+}
+
+.patratLearning span {
+    font-size: 18px;
+}
+
+.textLearning {
+    float: left;
+    width: 70px;
+}
+
+.containerLearningTexteSiImagini {
+    margin-left: 85px;
+}
+
+.containerReact {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.pozaReact {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url(../imagini/react.png);
+    background-size: 100% 100%;
+    margin-left: 3px;
+    margin-top: 0px;
+    transition: .4s;
+}
+
+.pozaReact:hover {
+    transform: scale(2.5);
+    z-index: 2;
+}
+
+.react {
+    float: left;
+}
+
+.react span {
+    margin-left: 29px;
+    margin-top: 0px;
+    float: left;
+}
+
+.containerAbilitatiInterpersonale {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 6rem;
+}
+
+.pozaSoftSkills {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../imagini/soft.png);
+    background-size: 100% 100%;
+    margin-top: -8px;
+    transition: .4s ease-out;
+}
+
+.containerAbilitatiInterpersonale:hover .pozaSoftSkills {
+    transform: scale(1.2);
+}
+
+.textAbilitatiInterpersonale {
+    padding-bottom: 18px;
+    margin-left: 37px;
+}
+.baraAbilitatiInterpersonale {
+    position: absolute;
+    left: -2rem;
+    margin-top: -0.8rem;
+    width: 1.5px;
+    height: 102%;
+    background: linear-gradient(to bottom, whitesmoke 0%, #000042 10%, #000042 85%, whitesmoke 100%);
+}
+
+/*~~~~~~~~~~~~~~~~~~~~ meniul din dreapta~~~~~~~~~~~~~~~*/
+
+.meniuDreapta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #E0E0E0;
+    width: 25%;
+    height: 100%;
+    z-index: 111;
+}
+
+.pozaPersonalInfo {
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    background-color: grey;
+    -webkit-clip-path: polygon(3% 100%, 3% 99%, 5% 99%, 6% 98%, 8% 97%, 10% 96%, 13% 95%, 16% 95%, 19% 93%, 22% 92%, 26% 90%, 30% 89%, 33% 87%, 35% 85%, 36% 80%, 36% 77%, 36% 73%, 35% 69%, 34% 66%, 33% 61%, 32% 53%, 32% 48%, 32% 44%, 32% 40%, 32.5% 37%, 32.5% 32%, 32.5% 26%, 32.5% 22%, 33% 18%, 34% 15%, 36% 11%, 39% 8%, 43% 5%, 47% 3%, 51% 3%, 54% 3%, 58% 3%, 62% 4%, 66% 7%, 68% 9%, 70% 14%, 70% 16%, 72% 19%, 73% 22%, 74% 25%, 74% 30%, 73% 34%, 73% 40%, 74% 42%, 74% 45%, 74% 47%, 73% 50%, 72% 53%, 70% 57%, 69% 59%, 68% 60%, 66% 60%, 66% 62%, 64% 75%, 67% 84%, 69% 87%, 70% 88%, 72% 89%, 74% 90%, 77% 92%, 78% 93%, 81% 94%, 84% 95%, 87% 97%, 90% 98%, 94% 100%);
+    clip-path: polygon(3% 100%, 3% 99%, 5% 99%, 6% 98%, 8% 97%, 10% 96%, 13% 95%, 16% 95%, 19% 93%, 22% 92%, 26% 90%, 30% 89%, 33% 87%, 35% 85%, 36% 80%, 36% 77%, 36% 73%, 35% 69%, 34% 66%, 33% 61%, 32.5% 53%, 32% 48%, 32% 44%, 32.5% 40%, 32.5% 37%, 32.5% 32%, 32.5% 26%, 32.5% 22%, 33% 18%, 34% 15%, 36% 11%, 39% 8%, 43% 5%, 47% 3%, 51% 3%, 54% 3%, 58% 3%, 62% 4%, 66% 7%, 68% 9%, 70% 14%, 70% 16%, 72% 19%, 73% 22%, 74% 25%, 74% 30%, 73% 34%, 73% 40%, 74% 42%, 74% 45%, 74% 47%, 73% 50%, 72% 53%, 70% 57%, 69% 59%, 68% 60%, 66% 60%, 66% 62%, 64% 75%, 67% 84%, 69% 87%, 70% 88%, 72% 89%, 74% 90%, 77% 92%, 78% 93%, 81% 94%, 84% 95%, 87% 97%, 90% 98%, 94% 100%);
+    background-size: 100% 100%;
+    margin-left: -5px;
+    margin-top: -23px;
+}
+
+.meniuDreapta:hover .pozaPersonalInfo {
+    background-image: url(../imagini/poza122.jpg);
+}
+
+.textPersonalInfo {
+    border: 1px solid silver;
+    background-color: white;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    padding: 5px 15px;
+    white-space: nowrap;
+    border-radius: -20px;
+}
+
+.textPersonalInfo span {
+    font-size: 19px;
+    margin-left: 29px;
+    margin-top: 0px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ date contact*/
+
+.pozaEmail {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -35px;
+    background-image: url(../imagini/email.png);
+    background-size: 100% 100%;
+    margin-top: 2px;
+}
+
+.textEmail {
+    position: relative;
+    width: 85%;
+    text-align: center;
+    margin-top: 120px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5px 15px;
+}
+
+.textEmail span {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+.textEmail p {
+    padding-bottom: 10px;
+    overflow: auto;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/*~~~~~~~~g mail*/
+
+.pozaGmail {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -36px;
+    background-image: url(../imagini/gmail2.jpg);
+    background-size: 100% 100%;
+    margin-top: 2px;
+}
+
+.textGmail {
+    position: relative;
+    width: 85%;
+    margin-top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.textGmail span {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+.textGmail p {
+    padding-bottom: 10px;
+    overflow: auto;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/*~~~~~~~~~linkedin  */
+
+.textLinkedin {
+    margin-top: 120px;
+    position: relative;
+    padding: 5px 15px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.pozaLinkedin {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -43px;
+    background-image: url(../imagini/linkedin.jpg);
+    background-size: 100% 100%;
+    margin-top: 2px;
+}
+
+.textLinkedin span {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 0;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#containerCifre {
+    margin-top: 15px;
+    width: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+    white-space: nowrap;
+}
+
+#containerCifre span {
+    color: #12369c;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: 1px;
+    font-size: 19px;
+}
+
+#containerCifre span:hover {
+    text-decoration: underline;
+    color: #000066;
+}
+
+.cifraUnu,
+.cifraDoi,
+.cifraTrei,
+.cifraPatru,
+.cifraCinci {
+    background-color: #E0E0E0;
+    margin-top: 3px;
+    padding: 0 10px;
+}
+
+.cifraUnu {
+    position: absolute;
+    visibility: hidden;
+}
+
+.cifraDoi {
+    position: absolute;
+    visibility: hidden;
+}
+
+.cifraTrei {
+    position: absolute;
+    visibility: hidden;
+}
+
+.cifraPatru {
+    position: absolute;
+    visibility: hidden;
+}
+
+.cifraCinci {
+    position: absolute;
+    visibility: hidden;
+}
+
+#containerCifre:hover .cifraCinci {
+    animation: numaratoareCinci 5s linear;
+}
+
+#containerCifre:hover .cifraPatru {
+    animation: numaratoarePatru 5s linear;
+}
+
+#containerCifre:hover .cifraTrei {
+    animation: numaratoareTrei 5s linear;
+}
+
+#containerCifre:hover .cifraDoi {
+    animation: numaratoareDoi 5s linear;
+}
+
+#containerCifre:hover .cifraUnu {
+    animation: numaratoareUnu 5s linear;
+}
+
+@keyframes numaratoareCinci {
+    0% {
+        visibility: visible;
+    }
+    20% {
+        visibility: hidden;
+    }
+}
+
+@keyframes numaratoarePatru {
+    20% {
+        visibility: visible;
+    }
+    40% {
+        visibility: hidden;
+    }
+}
+
+@keyframes numaratoareTrei {
+    20% {
+        visibility: hidden;
+    }
+    40% {
+        visibility: visible;
+    }
+    60% {
+        visibility: hidden;
+    }
+}
+
+@keyframes numaratoareDoi {
+    40% {
+        visibility: hidden;
+    }
+    60% {
+        visibility: visible;
+    }
+    80% {
+        visibility: hidden;
+    }
+}
+
+@keyframes numaratoareUnu {
+    80% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+.untrust p {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/*~~~~~~~~~~~phone  */
+
+.pozaPhone {
+    width: 18px;
+    height: 18px;
+    margin-left: -3px;
+    position: absolute;
+    background-image: url(../imagini/phone.jpg);
+    background-size: 100% 100%;
+    margin-top: -20px;
+}
+
+.textPhone {
+    margin-top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    padding: 5px 15px;
+    white-space: nowrap;
+}
+
+.textPhone span {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+.textPhone p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/*~~~~~~~~~~~adresa  */
+
+.pozaAdress {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-left: -35px;
+    background-image: url(../imagini/adress3.jpg);
+    background-size: 100% 100%;
+    margin-top: -21px;
+}
+
+.pozaHarta {
+    width: 80%;
+    height: 16vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-image: url(../imagini/harta.jpg);
+    background-size: 100% 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 1px solid green;
+}
+
+.textAdress {
+    margin-top: 170px;
+    text-align: center;
+    position: relative;
+    padding: 5px 15px;
+    white-space: nowrap;
+}
+
+.textAdress span {
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+.textAdress p {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  education  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.containerEducatia {
+    position: relative;
+    margin-top: 20px;
+    width: 70;
+    margin-left: 6rem;
+    padding: 20px 20px 0 0;
+}
+
+.pozaEducatia {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url(../imagini/education.png);
+    background-size: 100% 100%;
+    margin-top: -8px;
+    transition: .4s ease-out;
+}
+
+.containerEducatia:hover .pozaEducatia {
+    transform: scale(1.2);
+}
+
+.textEducatia {
+    padding-bottom: 15px;
+    margin-left: 35px;
+}
+
+#textSeminar {
+    padding-top: 3px;
+    font-size: 18px;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~  proiecte personale ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.containerPersonalProjects {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 6rem;
+}
+
+.pozaProiecte {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-image: url(../imagini/proiect1.png);
+    background-size: 100% 100%;
+    margin-top: -5px;
+    transition: .4s ease-out;
+}
+
+.containerPersonalProjects:hover .pozaProiecte {
+    transform: scale(1.2);
+}
+
+.textPersonalProjects {
+    padding-bottom: 18px;
+    margin-left: 33px;
+}
+.personalProjects a{
+text-decoration: none;
+color: black; 
+}
+.personalProjects a:hover{
+text-decoration: underline;
+color: #2e73c7; 
+}
+.baraPersonalProjects {
+    position: absolute;
+    left: -2rem;
+    margin-top: -0.3rem;
+    width: 1.5px;
+    height: 98%;
+    background: linear-gradient(to bottom, whitesmoke 0%, #000042 10%, #000042 85%, whitesmoke 100%);
+}
+/*~~~~~~~~~~~~~~ bottom~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.sectiuneBottom {
+    position: relative;
+    width: 100.3%;
+    margin-left: -.15%;
+    background-color: blue;
+    height: 30px;
+    background-image: url('../imagini/vectori.jpg');
+    background-size: cover;
+    background-position: top;
+}
+#tryIE {
+	border: 1px solid blue;
+	padding: 20px;
+	background-color: whitesmoke;
+	/*display: none;*/
+}
+
+@media screen and (max-width: 1400px) {
+    .fa-arrows {
+        right: 150px;
+    }
+    .containerCV:hover .fa-arrows {
+        right: 170px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .containerCV {
+        width: 100% !important;
+    }
+    @keyframes imageToText {
+        99% {
+            -webkit-text-fill-color: transparent;
+        }
+        100% {
+            font-size: 22px;
+            margin-top: 145px;
+            margin-left: 25%;
+            -webkit-text-fill-color: white;
+        }
+    }
+    .fa-arrows {
+        right: 115px;
+    }
+    .containerCV:hover .fa-arrows {
+        right: 155px;
+    }
+    .pozaHeader {
+        right: 5px;
+    }
+    .containerHeader {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+    }
+    .pozaGmail {
+        margin-left: -30px;
+        margin-top: 0px;
+    }
+    .textGmail p {
+        overflow: auto;
+    }
+    .pozaHarta {
+        height: 25vw;
+    }
+    .containerCV {
+        position: relative;
+        width: 70%;
+    }
+    .sectiuneBottom {
+        position: relative;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #containerTextPrimaImagine {
+        z-index: 1;
+    }
+    #containerTextPrimaImagine h5 {
+        display: none;
+    }
+    .containerText {
+        margin-top: 30px;
+        width: 300px;
+        animation-name: none;
+        background: linear-gradient( to bottom, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0, 0.6) 15%, rgb(0, 0, 0, 0.6) 85%, rgba(255, 255, 255, 0) 100%);
+    }
+    .containerText h2 {
+        text-shadow: 1px 1px 4px blue;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 20px 0px;
+        white-space: pre-wrap;
+    }
+    .containerText h4 {
+        position: absolute;
+        display: inline-block;
+        font-size: 20px;
+        left: 10%;
+        color: white;
+    }
+    .containerText p {
+        display: none;
+    }
+    .informatiiPersonale,
+    .containerAptitudiniPrincipale,
+    .containerAbilitatiSoftware,
+    .containerAbilitatiInterpersonale,
+    .containerEducatia {
+        margin-left: 5rem;
+    }
+    .pozaPersonalInfo {
+        width: 30px;
+        height: 20px;
+        margin-left: -5px;
+        margin-top: -20px;
+    }
+    .textPersonalInfo {
+        padding: 5px 10px;
+    }
+    .textPersonalInfo span {
+        font-size: 15px;
+        margin-left: 25px;
+        margin-top: 0px;
+    }
+    .textGmail span {
+        font-size: 18px;
+    }
+    .textGmail p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .containerText h4 {
+        left: 10%;
+    }
+}
