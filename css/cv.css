@@ -1176,10 +1176,10 @@ color: #2e73c7;
     height: 98%;
     background: linear-gradient(to bottom, whitesmoke 0%, #000042 10%, #000042 85%, whitesmoke 100%);
 }
-.personalProjects span{
+.imagineUModel{
     position: absolute;
-    margin-left: 3px;
-    margin-top: 3px;
+    margin-left: 222px;
+    margin-top: -22px;
     width: 17px;
     height: 17px;
     background-image: url('../imagini/u2.png');
