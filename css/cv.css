@@ -160,6 +160,29 @@
     }
 }
 
+.textLoveCode {
+    position: absolute;
+    left: 48%;
+    min-width: 250px;
+    transform: translate(-50%);
+    top: 120px;
+    opacity: 0;
+    font-size: 16px;
+    animation: apareLoveCodeText 5s forwards;
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+@keyframes apareLoveCodeText {
+    30% {
+        opacity: 0;
+    }
+    100% {
+        -webkit-text-fill-color: cyan;
+        opacity: 1;
+    }
+}
+
 .pozaHeader {
     position: absolute;
     width: 220px;
@@ -1255,10 +1278,17 @@ color: #2e73c7;
         display: inline-block;
         font-size: 20px;
         left: 10%;
+	margin-top: -5px;
         color: white;
     }
     .containerText p {
         display: none;
+    }
+    .textLoveCode {
+    	top: 155px;
+    	animation: apareLoveCodeText 3s forwards;
+    	-webkit-animation-delay: 0s;
+    	animation-delay: 0s;
     }
     .informatiiPersonale,
     .containerAptitudiniPrincipale,
